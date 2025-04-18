@@ -38,7 +38,7 @@ It is responsible for the window name.
 And finally...
 ### Parameter 5
 It is responsible for the window icon. You need to specify the relative/full path to the icon image.
->⚠️It is recommended to use JPEG/PNG.
+>It is recommended to use JPEG/PNG.
 ---
 >What are these names?
 
