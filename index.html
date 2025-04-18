@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #0b0b0b, #282828);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Quicksand';
+      position: relative;
+    }
+
+    h1 {
+      color: white;
+      font-size: 250px;
+      margin: 10px;
+      position: absolute;
+      top: 20px; /* отступ сверху */
+      left: 30px; /* отступ слева */
+      opacity: 0; /* изначально невидимый */
+      transform: translateY(20px); /* начальная позиция немного ниже */
+      animation: fadeInUpHeader 1.5s ease-out forwards; /* анимация появления снизу для заголовка */
+    }
+
+    p {
+      color: white;
+      font-size: 100px;
+      margin: 0;
+      position: absolute;
+      top: 300px; /* отступ от верхней части страницы */
+      right: 30px; /* отступ справа */
+      text-align: right; /* выравнивание текста по правому краю */
+      overflow: hidden; /* скрывает лишний текст */
+      white-space: normal; /* текст теперь может переноситься */
+      opacity: 0; /* изначально невидимый */
+      transform: translateY(20px); /* начальная позиция немного ниже */
+      animation: fadeInUpText 2s ease-out forwards; /* анимация появления снизу для текста */
+      word-wrap: break-word; /* разрешаем перенос слов */
+    }
+
+    /* Анимация появления текста снизу для заголовка */
+    @keyframes fadeInUpHeader {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Анимация появления текста снизу для абзаца */
+    @keyframes fadeInUpText {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .pill-button {
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 24px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .pill-button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>mini</h1>
+  <p>10 commands, 100 lines, 1000 possibilities.</p>
+
+  <div class="buttons">
+    <a href="https://github.com/USharp/mini-Engine" class="pill-button" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://github.com/USharp/mini-Engine/blob/main/README.md" class="pill-button" target="_blank">
+      <i class="fas fa-book"></i> Docs
+    </a>
+  </div>
+</body>
+</html>
