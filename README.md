@@ -4,7 +4,7 @@ mini - an engine created with the goal of creating a simple but functional engin
 
 >10 commands, 100 lines of code, 1000 possibilities.
 
-- Requires Python 3.6 or higher
+- Requires Python 3.8 or higher
 - Requires PyGame 2.6.1 or higher
 
 The engine does not require cramming for 1000 years. However, the complexity of the project will depend only on its scale.
